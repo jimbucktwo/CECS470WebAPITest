@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
     <header>
-        <h2>Holidays Viewer</h2>
-        <h3>Home</h3>
-        <h3>Privacy</h3>
+      <h2>HolidaysViewer</h2>
+      <h3>Home</h3>
+      <h3>Privacy</h3>
     </header>
-    <h1>Public Holidays Finder</h1>
-    <form>
-        <label>Country Code:</label>
-        <input type="country" id="country" name="country">
-        <label>Year:</label>
-        <input type="year" id="year" name="year">
-    </form>
-
-    <table class="table">
+    <div class="home">
+      <h1>Public Holidays Finder</h1>
+      <form action="" method="GET">
+        <label for="country">Country Code:</label>
+        <input type="country" id="country" name="country" required/>
+        <label for="year">Year:</label>
+        <input type="year" id="year" name="year" required/>
+        <button type="submit" id="button">Submit</button>
+      </form>
+      <hr class="line">
+      <table class="table">
         <thead>
-            <tr>
-                <th class = "date">Date</th>
-                <th class="name">Name</th>
-                <th class="local-name">Local Name</th>
-                <th class="country-code">Country Code
-                </th>
-                <th class="global">Global</th>
-            </tr>
+          <tr>
+            <th class="date">Date</th>
+            <th class="name">Name</th>
+            <th class="local-name">Local Name</th>
+            <th class="country-code">Country Code</th>
+            <th class="global">Global</th>
+          </tr>
         </thead>
-    </table>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="foot">
+    <hr class="line">
     <footer>
-        <p>&copy; - Holiday Viewers - <a href="#">Privacy</a></p>
+      <p>&copy; 2023 - Holiday Viewers - <a href="#">Privacy</a></p>
     </footer>
-</body>
+</div>
+  </body>
 </html>
